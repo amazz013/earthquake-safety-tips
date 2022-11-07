@@ -5,20 +5,369 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title>Hello world!</title>
+    <title>Earthquake Safety Tips</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    
+
     <script src="/script.js" defer></script>
   </head>
   <body>
     <!-- this is the start of content -->
-    <h1>Hello World!</h1>
-    <p>Wow, this is where my content will go!</p>
-    
-    <p>
-      A new paragraph! Wow!
-    </p>
+    <div class="content-container">
+    <div>
+      <button id="toggle-checklist" onclick="toggleChecklist()">
+        Open Checklist
+      </button>
+    </div>
+      <!-- slide 1 -->
+      <section class="full-screen" id="slide-1">
+        <h1>Earthquake Safety</h1>
+        <div>
+          <p>
+            This online checklist is created to help you plan and brave a major
+            earthquake in your area. By taking the right measures, the effect of
+            an earthquake can be reduced. Shifting off the ground is rarely the
+            real reason for death or injury. Most deaths result from collapsing
+            buildings, hurling projectiles, and falling debris. However, it is
+            always important to develop your earthquake preparedness because
+            earthquakes can occur with no sign. Gather up some emergency
+            supplies and get ready to become earthquake prepared!
+          </p>
+
+          <iframe
+            class="background-video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_r_nFT2m-Vg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h2>Resources</h2>
+        <li class="list link">
+          <a
+            href="https://fiu-flvc.primo.exlibrisgroup.com/permalink/01FALSC_FIU/1k8k11k/alma991002201629406571"
+            target="_blank"
+            >Earthquake Safety at Home</a
+          >
+        </li>
+        <li class="list link">
+          <a
+            href="https://fiu-flvc.primo.exlibrisgroup.com/permalink/01FALSC_FIU/1c4r23j/cdi_proquest_journals_2231172762 "
+            target="_blank"
+            >An immersive virtual reality serious game to enhance earthquake
+            behavioral responses and post-earthquake evacuation preparedness in
+            buildings</a
+          >
+        </li>
+        <li class="list link">
+          <a
+            href="https://babel.hathitrust.org/cgi/pt?id=uc1.$c81340&view=1up&seq=1"
+            target="_blank"
+            >Earthquake Safety Checklist</a
+          >
+        </li>
+      </section>
+      <!-- slide 2 -->
+      <section class="full-screen hidden" id="slide-2">
+        <h1>Have on Hand For any Emergency</h1>
+        <div>
+          <p></p>
+          <ol>
+            <li class="list">
+              Emergency Contact Information - Jot down three along with their
+              respective addresses and an out-of-town relative or friend as a
+              point-of-contact for separated family members.
+            </li>
+
+            <li class="list">
+              Flashlight - Always have one at your disposal along with extra
+              batteries. Flashlights are better to have on hand rather than
+              candles, in order to prevent any unnecessary fires if an unknown
+              gas leak occurs due to the earthquake.
+            </li>
+
+            <li class="list">
+              Portable Radio - Similar to the Flashlight, a Portable Radio is
+              good to have on hand because in the event of an earthquake, there
+              will be outages and it will become your best source to find out
+              what is going on and what to do next.
+            </li>
+
+            <li class="list">
+              First Aid Kit - This and knowledge of first aid and CPR will come
+              in handy if you or anyone around you has been injured or has gone
+              into cardiac arrest. (include link of Red Cross courses)
+            </li>
+
+            <li class="list">
+              Fire Extinguisher - In case of any small fires in or around your
+              area, make sure you know how to use one and what types of fires
+              they may put out. Your local fire department can train you!
+            </li>
+
+            <li class="list">
+              Food and Water - Having non-perishable food and plenty of water on
+              hand will come in handy in case of a power outage or any other
+              circumstance. You should consider buying enough food that can last
+              for at least 72 hours. Stock up on canned or dehydrated foods,
+              dried fruits, canned juices, and powdered milk. To stock up on
+              water, make sure you have three gallons per person for a 72-hour
+              period. You can clean your water with purification tablets like
+              Halazone and Globaline.
+            </li>
+            <li class="list">
+              Medications and Special Diets - If you live with any pre-existing
+              medical condition in which you need special medication, make sure
+              to have a week’s worth of supply. For those families with infants,
+              be prepared to stock up on special foods.
+            </li>
+
+            <li class="list">
+              Tools - Check if you have wrenches to turn off any gas and water
+              mains.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- slide 3 -->
+      <section class="full-screen hidden" id="slide-3">
+        <h1>Home Preparedness</h1>
+        <p>
+          Educate your household how to turn off electricity, gas, and water
+          main switches and valves. However, it is crucial to leave the gas on
+          except there is an emergency.
+        </p>
+      </section>
+      <!-- slide 4 -->
+      <section class="full-screen hidden" id="slide-4">
+        <h1>Earthquake Hazard Hunt</h1>
+        <p>
+          Be aware of your surroundings, it is best to note potential hazards
+          before the earthquake strikes in order to prevent. For example, if
+          there are any hanging or sharp objects that can potentially fall and
+          injure someone, relocate them to a safer place.
+        </p>
+      </section>
+      <!-- slide 5 -->
+      <section class="full-screen hidden" id="slide-5">
+        <h1>How to Ride out the Earthquake</h1>
+        <div>
+          <p>
+            Earthquakes in general are unperceived and sudden, so there could be
+            multiple scenarios in which you experience an earthquake.
+          </p>
+          <p class="continuation">If you are…</p>
+          <p>
+            <dt class="list-heading">Indoors</dt>
+            <dd>
+              <ul class="list">
+                <li>
+                  Get under a desk or table or stand in a doorway or corner. It
+                  is important to remain far from any windows, tall furniture,
+                  and fireplaces.
+                </li>
+              </ul>
+            </dd>
+            <dt class="list-heading">Outdoors</dt>
+            <dd>
+              <ul class="list">
+                <li>
+                  Find an open space where you are distant from any powerlines,
+                  buildings, or trees.
+                </li>
+              </ul>
+            </dd>
+            <dt class="list-heading">In a Building</dt>
+            <dd>
+              <ul class="list">
+                <li>
+                  Stay on your same floor and get under a desk far from walls
+                  and windows. Do not use the elevator as it could lose power or
+                  stability.
+                </li>
+              </ul>
+            </dd>
+            <dt class="list-heading">In a Vehicle</dt>
+            <dd>
+              <ul class="list">
+                <li>
+                  Drive to the side of the road clear of powerlines and
+                  overpasses and stop the car. Remain inside until the
+                  earthquake stops and do not drive over damaged roads or
+                  bridges.
+                </li>
+              </ul>
+            </dd>
+          </p>
+          <img
+            class="small-img"
+            src="https://cdn.glitch.global/6cedee79-3d76-42a8-adf3-2c0ec5a2b024/Screen%20Shot%202022-11-06%20at%207.16.59%20PM.png?v=1667780284326"
+          />
+        </div>
+      </section>
+      <!-- slide 6 -->
+      <section class="full-screen hidden" id="slide-6">
+        <h1>When the Ground Stops Shaking</h1>
+        <div>
+          <dt class="list-heading">Check for Injuries</dt>
+          <dd>
+            <ul class="list">
+              <li>
+                Verify that everyone can breath normally and if not, apply
+                mouth-to-mouth resuscitation.
+              </li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>
+                Check to see that everyone is wearing shoes to prevent any cuts.
+              </li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>
+                Stop any bleeding by applying pressure to the wound. Only use
+                the telephone if someone is seriously injured and do not move
+                them. Cover them with a blanket to stabilize any temperature
+                drops.
+              </li>
+            </ul>
+          </dd>
+
+          <dt class="list-heading">Check for Hazards</dt>
+          <dd>
+            <ul class="list">
+              <li>
+                Put out any fires, however if it becomes uncontrollable, leave
+                your house and warn your neighbors.
+              </li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>
+                Make sure any gas, water, and electrical lines or appliances are
+                safe.
+              </li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>
+                If there is harm to your electrical wiring, switch off
+                electrical power.
+              </li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>
+                Do not come into contact with damaged electrical appliances.
+              </li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>Clean up any flammable liquids.</li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>Check food and water supplies.</li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>Check building structure.</li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>Inspect the inside of your cupboards cautiously.</li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>
+                Do not drive and try to keep streets clear unless there is an
+                emergency.
+              </li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>Expect aftershocks.</li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>Stay informed by using a battery-powered radio.</li>
+            </ul>
+          </dd>
+        </div>
+      </section>
+      <!-- slide 7 -->
+      <section class="full-screen hidden" id="slide-7">
+        <h1>If You Have to Evacuate</h1>
+        <div>
+          <dd>
+            <ul class="list">
+              <li>Leave a detailed message of where you can be found.</li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>
+                List meeting points in case of any separation. Meeting points
+                can be schools or community centers.
+              </li>
+            </ul>
+          </dd>
+          <dd>
+            <ul class="list">
+              <li>
+                Take medicines, first aid kits, flashlights, radios and
+                batteries, important documents, cash, food, sleeping
+                bags/blankets, and some extra clothes.
+              </li>
+            </ul>
+          </dd>
+        </div>
+      </section>
+      <!-- arrows -->
+
+     <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-left-circle-fill left"
+        onclick="returnContent()"
+        viewbox="0 0 16 16"
+      >
+        <path
+          d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-right-circle-fill right "
+        onclick="advanceContent()"
+        viewbox="0 0 16 16"
+      >
+        <path
+          d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+        />
+      </svg>
+    </div>
   </body>
 </html>
