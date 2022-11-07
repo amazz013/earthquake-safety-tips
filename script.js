@@ -1,4 +1,19 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
+let counter = 1;
 
-console.log("Hello, world!");
+const advanceContent = () => {
+  if (counter < 7) {
+    counter++;
+    let idToSelect = "#slide-" + counter;
+    document.querySelector(idToSelect).classList.remove("hidden");
+  }
+};
+
+const returnContent = () => {
+  if (counter > 1) {
+    let idToSelect = "#slide-" + counter;
+    document.querySelector(idToSelect).classList.add("hidden");
+    counter--;
+  }
+};

@@ -1,13 +1,76 @@
-/* a minimalist set of CSS resets */
-
 /* default to border-box */
 html {
   box-sizing: border-box;
   font-size: 16px;
+  background: #d5dfe5;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+
+h1 {
+  color: #b49594;
+  font-family: ‘abril fatface’, serif;
+  text-align: center;
+  font-size: 6rem;
+  background: #d5dfe5;
+  top: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #c9b1bd; /*pinkish*/
+}
+
+p {
+  font-family: verdana, sans, serif;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: auto;
+  line-height: 20px;
+  background: #d5dfe5; /*greyish*/
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+/* lists' css */
+.list {
+  font-family: verdana, sans, serif;
+  text-align: left;
+  text-indent: 0px;
+  letter-spacing: auto;
+  line-height: 20px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  background: #d5dfe5;
+  margin-right: 150px;
+  margin-left: 100px;
+}
+
+/* list description heading */
+.list-heading {
+  font-family: verdana, sans, serif;
+  font-weight: bold;
+  color: #c9b1bd;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: justify;
+  margin-right: 150px;
+  margin-left: 100px;
+}
+
+.continuation {
+  font-family: verdana, sans, serif;
+  text-indent: 0px;
+  text-align: justify;
+  letter-spacing: auto;
+  line-height: 20px;
+  background: #d5dfe5; /*greyish*/
+  margin-right: 150px;
+  margin-left: 93px;
 }
 
 /* adjust typography defaults */
@@ -19,6 +82,176 @@ body {
 /* images and videos max out at full width */
 img,
 video {
-  height: auto;
+  height: 100%;
   max-width: 100%;
+}
+
+a:link {
+  color: #b49594;
+}
+a:visited {
+  color: #567568;
+}
+
+.background-video {
+  width: calc(100% - 30px);
+  height: 600px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: #d1b1cb;
+  position: relative; /* try changing this to position: relative */
+}
+
+.full-screen {
+  width: 100%;
+  height: 600vh;
+  border: 1px solid #d5dfe5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+}
+.full-screen p {
+  padding: 10px;
+}
+
+.content-container {
+  position: relative;
+}
+
+.content-container svg {
+  font-size: 28px;
+  position: fixed;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.right {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  color: white;
+  right: 0%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: #7f9172;
+}
+
+.left {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  color: white;
+  left: 0%;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: #7f9172;
+}
+
+
+.content-container:hover svg {
+  animation-name: shake;
+  animation-duration: 1s;
+ 
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#slide-2 {
+  background: #d5dfe5;
+}
+#slide-3 {
+  background: #d5dfe5;
+}
+#slide-4 {
+  background: #d5dfe5;
+}
+#slide-5 {
+  background: #d5dfe5;
+}
+#slide-6 {
+  background: #d5dfe5;
+}
+#slide-7 {
+  background: #d5dfe5;
+}
+
+button {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  background: lightgrey;
+  margin: 10px;
+  color: navy;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#checklist {
+  padding: 25px;
+  background: #eccfc3;
+  position: relative;
+}
+
+.hidden-checklist {
+  width: 0px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.small-img {
+  width: calc(100% - 30px);
+  height: 600px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: #d1b1cb;
+  position: relative;
 }
