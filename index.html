@@ -9,17 +9,16 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-
+    <!-- import html2canvas library -->
+    <script
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+      defer
+    ></script>
     <script src="/script.js" defer></script>
   </head>
   <body>
     <!-- this is the start of content -->
     <div class="content-container">
-    <div>
-      <button id="toggle-checklist" onclick="toggleChecklist()">
-        Open Checklist
-      </button>
-    </div>
       <!-- slide 1 -->
       <section class="full-screen" id="slide-1">
         <h1>Earthquake Safety</h1>
@@ -342,7 +341,7 @@
       </section>
       <!-- arrows -->
 
-     <svg
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"
@@ -360,14 +359,70 @@
         width="16"
         height="16"
         fill="currentColor"
-        class="bi bi-arrow-right-circle-fill right "
+        class="bi bi-arrow-right-circle-fill right"
         onclick="advanceContent()"
         viewbox="0 0 16 16"
       >
+        /
         <path
           d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
         />
       </svg>
+      <div class="checklist-container">
+        <section id="checklist">
+          <h3>My Earthquake Checklist</h3>
+          <div>
+            <input type="checkbox" name="input1" />
+            <label for="input1">Emergency Contact Information</label>
+
+            <input type="checkbox" name="input2" />
+            <label for="input2">Flashlight</label>
+            <input type="checkbox" name="input3" />
+            <label for="input1">Portable Radio</label>
+
+            <input type="checkbox" name="input4" />
+            <label for="input2">First Aid Kit</label>
+            <input type="checkbox" name="input5" />
+            <label for="input1">Fire Extinguisher</label>
+
+            <input type="checkbox" name="input6" />
+            <label for="input2">Non-perishable food and clean water.</label>
+            <input type="checkbox" name="input7" />
+            <label for="input1">Special Medication(s) and Food(s)</label>
+
+            <input type="checkbox" name="input8" />
+            <label for="input2">
+              Essential tools: wrench, hammer, screwdriver, pliers, etc.</label
+            >
+            <input type="checkbox" name="input9" />
+            <label for="input2">Educate your Household</label>
+            <input type="checkbox" name="input10" />
+            <label for="input2">Note potential hazards</label>
+            <input type="checkbox" name="input11" />
+            <label for="input2">Note setting and plan how to take cover</label>
+            <input type="checkbox" name="input 12" />
+            <label for="input2">Check for injuries</label>
+            <input type="checkbox" name="input13" />
+            <label for="input2">Check building structure</label>
+            <input type="checkbox" name="input14" />
+            <label for="input2">Put out fire(s)</label>
+            <input type="checkbox" name="input15" />
+            <label for="input2"
+              >If evacuating, leave message of your next location.</label
+            >
+          </div>
+        </section>
+      </div>
+      <div>
+        <button id="toggle-checklist" onclick="toggleChecklist()">
+          Open Checklist
+        </button>
+      </div>
+      <div>
+        <button class="downloadButton" onclick="downloadChecklist()">
+          Download my checklist as an image :)
+        </button>
+      </div>
     </div>
   </body>
 </html>
