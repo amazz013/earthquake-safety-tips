@@ -230,13 +230,13 @@ button {
   color: White;
   position:absolute;
   margin-left: 40%;
-  margin-top:7%;
+  margin-top:6%;
   
 }
 #toggle-checklist {
   position:absolute;
   margin-left: 44.5%;
-  margin-top:4%;
+  margin-top:3%;
 }
 
 button:hover {
