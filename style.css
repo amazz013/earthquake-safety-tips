@@ -20,11 +20,31 @@ h1 {
   top: 0;
 }
 
+.neon-text{
+  color: #ffffff;
+  text-shadow:
+      0 0 7px #ffffff,
+      0 0 10px #ffffff,
+      0 0 21px #B91372,
+      0 0 42px #B91372,
+      0 0 82px #B91372,
+      0 0 92px #B91372;
+  margin-top: 20px; 
+}
+
 h2 {
   text-align: center;
   color: #c9b1bd; /*pinkish*/
 }
 
+.comment {
+  color: #c9b1bd;
+	font-size: 40px;
+	text-shadow: -1px 1px 2px #FFFFFF,
+				  1px 1px 2px #FFFFFF,
+				  1px -1px 0 #FFFFFF,
+				  -1px -1px 0 #FFFFFF;
+}
 p {
   font-family: verdana, sans, serif;
   text-indent: 50px;
@@ -88,9 +108,15 @@ video {
 
 a:link {
   color: #b49594;
+  margin-top: 200px; 
+  padding: 20px;
 }
 a:visited {
-  color: #567568;
+  color: #7F9172;
+}
+
+a:hover {
+  color:#b49594;
 }
 
 .background-video {
@@ -215,6 +241,7 @@ button {
   margin-left: 40%;
   margin-top:6%;
   
+  
 }
 #toggle-checklist {
   position:absolute;
@@ -281,6 +308,7 @@ button:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   top: 40em;
   width: 50%;
   border-radius: 10px;
@@ -351,21 +379,25 @@ button:hover {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
+  max-width: 1000px;
+  margin-top: -19px;
+  margin-left: 20px;
+  margin-right: 10px;
   padding: 16px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px;
+  padding: 5px; 
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 0px;
   border-radius: 3px 0 0 3px;
+  margin-right: -19px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -379,7 +411,8 @@ button:hover {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  margin-top: 130px;
+  margin-bottom: 40px; 
   width: 100%;
   text-align: center;
 }
